@@ -9,6 +9,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { SearchComponent } from './components/search/search.component';
 
+import { SpotifyService } from './services/spotify.service';
+
+// setup routes
 const routes: Routes = [
   { path: '', component: SearchComponent },
   { path: 'about', component: AboutComponent }
@@ -27,7 +30,7 @@ const routes: Routes = [
     HttpModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [SpotifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
