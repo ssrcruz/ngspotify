@@ -17,7 +17,7 @@ import { SpotifyService } from './services/spotify.service';
 const routes: Routes = [
   { path: '', component: SearchComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'artist/:id', component: ArtistComponent }
+  { path: 'artist/:id', component: ArtistComponent },
   { path: 'album/:id', component: AlbumComponent }
 ]
 
